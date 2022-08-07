@@ -20,6 +20,7 @@ Console.WriteLine("The square of " + num + " is " + square);
 Console.WriteLine($"The square of {num} is {square}");
 */
 
+/*
 //Задача 3. Напишите программу, которая на вход принимает два числа и проверяет, является ли первое квадратом второго
 
 Console.Write("Input first number: ");
@@ -39,3 +40,19 @@ else
 {
     Console.WriteLine($"{number1} is not a square of {number2}");
 }
+*/
+
+// Задача 4. Напишите программу, которая на вход принимает одно число (n), а на выходе показывает все целые числа в промежутке отрицательной версии этого числа до самого этого числа.
+
+Console.Write("Input an integer positive number: ");
+
+int number = Convert.ToInt32(Console.ReadLine());
+
+int current = number * - 1;
+
+while (current <= number)
+{
+    Console.Write(current + " ");
+    current++;
+}
+
