@@ -26,7 +26,6 @@ else
 }
     
 Console.WriteLine($"Max of these two numbers is {max}");
-
 */
 /*
 //Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
@@ -52,7 +51,6 @@ if ( c > max )
 
 Console.WriteLine($"The max of these three numbers is {max}");
 */
-
 /*
 // Задача 6. Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
 
@@ -68,7 +66,7 @@ else
     Console.WriteLine($"{number} is not an even number");
 }
 */
-
+/*
 //Задача 8. Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
 Console.WriteLine("Input integer a random number starting with one: ");
@@ -83,4 +81,4 @@ while(current_number <= random_number)
     if(current_number%2 == 0)    
     current_number = current_number + 2;
 }
-
+*/
