@@ -40,11 +40,9 @@ Console.WriteLine("Input the first number: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 int a = number1;
 
-
 Console.WriteLine("Input the second number: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
 int b = number2;
-
 
 Console.WriteLine("Input the third number: ");
 int number3 = Convert.ToInt32(Console.ReadLine());
@@ -52,15 +50,11 @@ int c = number3;
 
 int max = a;
 
-if( b > max)
-{
+if( b > max )
     max = b;
-}
-else
-{
+if ( c > max ) 
     max = c;
-}
-    
+
 Console.WriteLine($"The max of these three numbers is {max}");
 */
 
@@ -82,6 +76,7 @@ else
 
 //Задача 8. Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
+/*
 Console.WriteLine("Input integer a random number starting with one: ");
 int random_number = Convert.ToInt32(Console.ReadLine());
 
@@ -94,5 +89,4 @@ while(current_number <= random_number)
     if(current_number%2 == 0)    
     current_number = current_number + 2;
 }
-
-
+*/
