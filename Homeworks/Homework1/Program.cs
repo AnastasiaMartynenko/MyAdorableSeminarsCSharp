@@ -1,5 +1,5 @@
 ﻿/*
-// Задача 1. Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+// Задача 2. Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
 Console.WriteLine("Input the first number: ");
 int first_number = Convert.ToInt32(Console.ReadLine());
@@ -62,7 +62,9 @@ else
 Console.WriteLine($"The max of these three numbers is {max}");
 
 */
-// Задача 3. Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
+
+/*
+// Задача 6. Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
 
 Console.WriteLine("Input the number: ");
 int number = Convert.ToInt32(Console.ReadLine());
@@ -78,7 +80,7 @@ if(number%2 > 0)
  Console.WriteLine($"{number} is not an even number");
 }
 
-
+*/
 
 
 
