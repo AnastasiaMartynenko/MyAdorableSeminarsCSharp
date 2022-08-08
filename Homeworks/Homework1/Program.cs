@@ -1,13 +1,14 @@
 ﻿// Задача 1. Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
-Console.Write("Input first digit: ");
+Console.WriteLine("Input first digit: ");
+int first_digit = Convert.ToInt32(Console.ReadLine());
+
+int a = first_digit;
+
 
 Console.WriteLine("Input second digit: ");
-
-
-int a = Convert.ToInt32(Console.ReadLine());
-int b = Convert.ToInt32(Console.ReadLine());
-
+int second_digit = Convert.ToInt32(Console.ReadLine());
+int b = second_digit;
 
 int min = a;
 int max = b;
