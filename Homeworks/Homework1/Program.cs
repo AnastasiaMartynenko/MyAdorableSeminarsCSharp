@@ -62,7 +62,6 @@ else
 }
     
 Console.WriteLine($"The max of these three numbers is {max}");
-
 */
 
 /*
@@ -73,27 +72,27 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 if(number%2 == 0) 
 {
- Console.WriteLine($"{number} is an even number");
+    Console.WriteLine($"{number} is an even number");
 }
-
-
-if(number%2 > 0)
+else
 {
- Console.WriteLine($"{number} is not an even number");
+    Console.WriteLine($"{number} is not an even number");
 }
 */
 
 //Задача 8. Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
-Console.WriteLine("Input integer number more than one: ");
-int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input integer a random number starting with one: ");
+int random_number = Convert.ToInt32(Console.ReadLine());
 
-int current_number = number;
-int even_number = current_number%2;
+int current_number = 2;
+int numbers = current_number;
 
-while(current_number%2 == 0)
+while(current_number <= random_number)
 {
-   current_number = current_number + 2;
+    Console.WriteLine(current_number);
+    if(current_number%2 == 0)    
+    current_number = current_number + 2;
 }
 
-Console.WriteLine($"The even numbers are: {even_number}");
+
