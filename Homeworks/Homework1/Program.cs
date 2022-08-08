@@ -1,13 +1,10 @@
-﻿
-
-/*
+﻿/*
 // Задача 2. Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
 Console.WriteLine("Input the first number: ");
 int first_number = Convert.ToInt32(Console.ReadLine());
 
 int a = first_number;
-
 
 Console.WriteLine("Input the second number: ");
 int second_number = Convert.ToInt32(Console.ReadLine());
@@ -28,11 +25,9 @@ else
     min = a;
 }
     
-
 Console.WriteLine($"Max of these two numbers is {max}");
 
 */
-
 /*
 //Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 
@@ -75,7 +70,6 @@ else
 */
 
 //Задача 8. Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
-
 
 Console.WriteLine("Input integer a random number starting with one: ");
 int random_number = Convert.ToInt32(Console.ReadLine());
