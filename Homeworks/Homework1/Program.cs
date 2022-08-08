@@ -79,11 +79,21 @@ if(number%2 > 0)
 {
  Console.WriteLine($"{number} is not an even number");
 }
-
 */
 
+//Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
+Console.WriteLine("Input integer number more than one: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
+int current_number = number;
+int even_number = current_number%2;
+while(current_number%2 == 0)
+{
+   current_number = current_number + 2;
+}
+
+Console.WriteLine($"The even numbers are: {even_number}");
 
 
 
