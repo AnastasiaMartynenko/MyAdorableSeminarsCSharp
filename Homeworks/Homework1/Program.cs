@@ -76,7 +76,7 @@ else
 
 //Задача 8. Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
-/*
+
 Console.WriteLine("Input integer a random number starting with one: ");
 int random_number = Convert.ToInt32(Console.ReadLine());
 
@@ -85,8 +85,8 @@ int numbers = current_number;
 
 while(current_number <= random_number)
 {
-    Console.WriteLine(current_number);
+    Console.Write(current_number + " ");
     if(current_number%2 == 0)    
     current_number = current_number + 2;
 }
-*/
+
