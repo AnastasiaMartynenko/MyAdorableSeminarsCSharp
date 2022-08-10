@@ -87,4 +87,17 @@ while(index < n)
 
     }
  }
+//void метод - это метод, который ничего не возвращает
+ void PrintArray(int[] collection2)// мы не можем использовать элемент collection, т.к. он уже нами использовался
+ {
+    int count = collection2.Length;
+    int position = 0;
+    while (position < count)
+    {
+        Console.WriteLine(collection2[position]);
+        position = position + 1;
+    }
+ } 
  int[] array = new int[10]; //new int[10] - означает "создай новый массив, в котором будет 10 элементов"
+FillArray(array);
+PrintArray(array);
