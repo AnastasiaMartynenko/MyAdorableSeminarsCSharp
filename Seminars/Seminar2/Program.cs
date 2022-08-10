@@ -63,4 +63,4 @@ int n1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input the second number: ");
 int n2 = Convert.ToInt32(Console.ReadLine());
 
-IsDivisionable(n1, n2); //так блэт. Тут мы просто вызываем метод, как раньше вызывали Console.Write. Это метод без return, ничего не возвращаем, поэтому так и выводим
+IsDivisionable(n1, n2); //так блэт. Тут мы просто вызываем метод, как раньше вызывали Console.Write("") Это метод без return, ничего не возвращаем, поэтому так и выводим
