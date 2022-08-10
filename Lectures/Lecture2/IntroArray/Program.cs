@@ -50,7 +50,7 @@ int max = Max(
 );
 Console.WriteLine(max);
 */
-
+/*
 // Задача 3. Имеется массив array из n элементов. Требуется найти элемент массива, равный find.
 // Решение:
 // 1. Установить счетчик index на 0
@@ -58,17 +58,33 @@ Console.WriteLine(max);
 // 3. Если array[index] еще не равно find => увеличиваем index на 1 (index++)
 // 4. Если index < n, то переходим к шагу 2. В противном случае алгоритм завершит работу безуспешно.
 
-int[] array = {1, 12, 31, 4, 15, 16, 17, 18}; 
+int[] array = {1, 12, 31, 4, 15, 18, 16, 17, 18, 30}; 
 
 int n = array.Length; // array.Length возвращает количество элементов массива
-int find = 4; // допустим пользователь ввел 4
-
+int find = 18; // допустим пользователь ввел 4
 int index = 0;
+
 while(index < n) 
 {
-    if(array[index] == 0)
+    if(array[index] == find)
     {
         Console.WriteLine(index);
+        break; // оператор break нужен,когда в массиве несолько индексов с одинаковыми значениями. Он прерывает цикл, когда мы нашли первое значени. Иначе в печать выйдут все индексы с одинаковыми значениями.
+
     }
     index = index + 1;
 }
+ */
+ //Задача 4. 
+ void FillArray(int[] collection)
+ {
+    int length = collection.Length;
+    int index = 0;
+    while (index < length)
+    {
+        collection[index] = new Random().Next(1, 10);
+        index = index + 1;
+
+    }
+ }
+ int[] array = new int[10]; //new int[10] - означает "создай новый массив, в котором будет 10 элементов"
