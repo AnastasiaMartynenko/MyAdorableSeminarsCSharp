@@ -40,27 +40,42 @@ int randomNumber = new Random().Next(100, 1000);//Объявили новую п
 int newNumber = CutNumber(randomNumber);//объявили переменную newNumber и положили в нее наш метод
 Console.WriteLine($"New version of {randomNumber} is {newNumber}");//говорим, что новая версия рандомного трехзначного - это говое число(которое посчиталось в методе)
 */
-
+/*
 //Задача 3. Напишите программу, которая будет принимать на вход два числа и выводить является ли второе число кратным первому. Если число не кратно, то программа будет выводить остаток от деления.
 
 void IsDivisionable(int num1, int num2)
-{
 
-   if( num2 % num1 == 0 )
+{
+   int reminder = num2 % num1;
+   if( reminder == 0 )
    {
       Console.WriteLine($"{num2} is divisionable of {num1}");
    }
    else
    {
-       Console.WriteLine($"{num2} is not divisionable of {num1}. The reminder is {num2 % num1}");
+       Console.WriteLine($"{num2} is not divisionable of {num1}. The reminder is {reminder}");
    }
 
 } // Этот метод ничего не возвращает, поэтому мы не используем return
 
 // Теперь пишем основную программу
-Console.Write("input the firts number: ");
+Console.Write("Input the firts number: ");
 int n1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input the second number: ");
 int n2 = Convert.ToInt32(Console.ReadLine());
 
 IsDivisionable(n1, n2); //так блэт. Тут мы просто вызываем метод, как раньше вызывали Console.Write("") Это метод без return, ничего не возвращаем, поэтому так и выводим
+*/
+
+// Задача 4. Напишите программу, которая принимает на вход число и проверяет кратно ли оно одновременно 7 и 23.
+ bool IsDivis (int number)// bool -это метод, который возвращает всего два значений: true или false (return нужен)
+ {
+   if(number % 7 == 0 &&  number % 23 == 0)//&& - это означает И 
+       return true;
+   else                                                               // можно было весь метод записать одно строкой: return number% 7 == 0 && number % 23 == 0;
+       return false;
+}
+Console.Write("Input a number: ");
+int n = Convert.ToInt32(Console.ReadLine());
+bool isDivision = IsDivis(n);//тут мы вставляем наш метод
+Console.WriteLine(isDivision);
