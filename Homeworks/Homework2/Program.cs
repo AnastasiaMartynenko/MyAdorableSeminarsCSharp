@@ -7,30 +7,73 @@ int MiddleDigit (int number)
 }
 int randomNumber = new Random().Next(100,1000);
 int newNumber = MiddleDigit(randomNumber);
+
 */
-
 // Задача 13. Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
-
-void int FindThirdDigit (number)
-{
-   int[] array = {0, array.Length};
-   int n = array.Length;
-   int index = 0;
-   int third_digit = array[2];  
+/*
+void FindThirdDigit(int[] array)
+{  int n = array.Length;
+   int index = 0; 
    {
       while (index < 2)
       {
-         Concole.WriteLine("Here is no third digit of this number ");
-         index++;
+         Console.WriteLine("Here is no third digit of this number ");
       }
+      index++;
       if (index == 2)
       {
-         Console.WriteLine("Here is ");
+         Console.WriteLine($"Here is the third digit of this number");
       }
    }
 }
-   
-Console.Wrire("Input a number: ");
-int n = Convert.ToInt32(Console.ReadLine());
-int n = FindThirdDigit(n):
-Console.WriteLine()
+Console.Write("Input a number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int new_digit = FindThirdDigit(number);
+Console.WriteLine(new_digit);
+*/
+
+void FindThirdNumber (int[] number)
+
+{  Console.WriteLine("Here is no third digit of this number ");
+   int index = 0;
+   number[] = new Random();
+
+   while(index < 2)
+   {
+      
+      index++;
+   }
+   if(index == 2)
+   {
+      Console.WriteLine("Here is no third digit of this number ");
+   }
+
+}
+Console.Write("Input a number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int new_digit = FindThirdDigit(number);
+Console.WriteLine(new_digit);
+
+
+/*
+int third_number;
+int index = 0;
+{
+   if(index < 0)
+   {
+      Console.WriteLine("Here is no third digit of this number ");
+   }
+   index ++;
+   if(index == 2)
+   {
+      Console.WriteLine("Here is the third digit of this number");
+   }  
+}
+Console.Write("Input a number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int new_digit = FindThirdDigit(number);
+Console.WriteLine(new_digit);
+
+
+int third_digit = array[2]; 
+*/
