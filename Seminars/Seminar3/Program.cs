@@ -1,19 +1,19 @@
 ﻿//Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y)
 /*
-void FindCooardinats (int quart)
+void FindCooardinats (int quarter)
 {
-   if(quart == 1) 
+   if(quarter == 1) 
    Console.WriteLine("Диапазон (х+, y+)");
-   if(quart == 2)
+   if(qquarter == 2)
    Console.WriteLine("Диапазон (х-, y+)");
-   if(quart == 3)
+   if(quarter == 3)
    Console.WriteLine("Диапазон (х-, y-)");
-   if(quart == 4)
+   if(quarter == 4)
    Console.WriteLine("Диапазон (х+, y-)");
 }
-Console.Write("Input number of quart: ");
-int quart = Convert.ToInt32(Console.ReadLine());
-FindCooardinats(quart);
+Console.Write("Input number of quarter: ");
+int quarter = Convert.ToInt32(Console.ReadLine());
+FindCooardinats(quarter);
 */
 //Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
 
@@ -48,6 +48,6 @@ void ShowSquare (int n)
     }
 
 }
-Console.Write("Веедите любое целое число: ");
+Console.Write("Введите любое целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 ShowSquare(number);

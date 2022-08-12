@@ -141,6 +141,8 @@ Console.WriteLine(FindDay);
 
 //// Задача 13. Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
+
+/*
 int FindThirdDigit(int[]array)
 
 {  
@@ -164,3 +166,4 @@ int random_number = Convert.ToInt32(Console.ReadLine());
 int new_digit = FindThirdDigit(third_digit);
 Console.WriteLine(new_digit);
 
+*/
