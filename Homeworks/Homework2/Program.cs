@@ -32,18 +32,51 @@ int new_digit = FindThirdDigit(number);
 Console.WriteLine(new_digit);
 */
 
-void FindThirdNumber (int[] number)
 
-{  Console.WriteLine("Here is no third digit of this number ");
+int FindNewDigit ([]int number, int third_digit)
+{
+   int digits = number.Lenght;
    int index = 0;
-   number[] = new Random();
 
+
+
+
+
+}
+
+/*
+Console.Write("Input a number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int new_number = FindThirdDigit(number);
+Console.WriteLine(new_digit);
+
+
+
+void FindThirdNumber(int[] number)
+{ int length = number.Lenght;
+  int index = 0;
+  while(index < 2)
+   {
+      Console.WriteLine("Here is no third digit of this number ");
+      number[index] = new Random();
+      index++;
+      
+   }
+
+}  
+   
+  FindThirdNumber(number);
+  PrintArray(number);
+   
+   /*
+   Console.WriteLine("Here is no third digit of this number ");
+   
    while(index < 2)
    {
       
       index++;
    }
-   if(index == 2)
+        if(index == 2)
    {
       Console.WriteLine("Here is no third digit of this number ");
    }
