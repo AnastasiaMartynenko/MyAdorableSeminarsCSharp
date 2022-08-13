@@ -9,8 +9,10 @@ int randomNumber = new Random().Next(100,1000);
 int newNumber = MiddleDigit(randomNumber);
 
 */
-/*
+
 // Задача 13. Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+
+/*
 Console.Write("Input a number: ");
 
 int number = Convert.ToInt32(Console.ReadLine());
@@ -22,20 +24,17 @@ for(int current_number = number; current_number >=1000; current_number++)
   Console.WriteLine($"{current_number} is the third digit of {number}");
     if(current_number <= 999 && current_number >= 100)
     {
-        current_number++;
-        current_number = number % 10;
-        Console.WriteLine($"{current_number} is the third digit of {number}");
+      current_number = number % 10;
+      Console.WriteLine($"{current_number} is the third digit of {number}");
+      current_number++;
     }
-    
-   
 }
-for (int current_number = number; current_number < 99; current_number++)
+for (int current_number = number; current_number <= 99; current_number++)
 {
   Console.WriteLine($"{number} doesn't contain the third digit");
 }
-*/
 //Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
-
+/*
 bool FindWeekend (int day_number)
 {
    if(day_number >= 6)
@@ -48,3 +47,56 @@ Console.Write("Input any number of a week day: ");
 int day_number = Convert.ToInt32(Console.ReadLine());
 bool FindDay = FindWeekend(day_number);
 Console.WriteLine(FindDay);
+*/
+//Console.Write("Input a number: ");
+
+//int number = Convert.ToInt32(Console.ReadLine());
+/*
+Console.Write("Input a number: ");
+
+int number = Convert.ToInt32(Console.ReadLine());
+
+int current_number = number;
+
+while(number >= 1000)
+{
+   current_number = number / 10 % 10;
+   current_number--;
+   while(current_number <= 999 && current_number >= 100)
+  {
+      current_number = number % 10;
+      Console.WriteLine($"{current_number} is the third digit of {number}");
+      current_number--;
+      while(current_number <= 99)
+      {
+         Console.WriteLine($"{number} doesn't contain the third digit");
+      }
+   }
+}
+*/
+Console.Write("Input a number: ");
+
+int number = Convert.ToInt32(Console.ReadLine());
+int current_number = number;
+
+while (number >= 1000)
+{
+  current_number = number / 10;
+}
+
+   while( number <=999 && number >=100)
+   {
+      current_number = number % 10;
+      Console.WriteLine($"{current_number} is the third digit of {number}");
+      current_number++;
+
+         while(current_number <=99)
+           {
+            Console.WriteLine($"{number} doesn't contain the third digit");
+            current_number++;
+           }
+   }
+ 
+   
+   
+   
