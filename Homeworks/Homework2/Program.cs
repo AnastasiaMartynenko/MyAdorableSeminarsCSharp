@@ -34,3 +34,17 @@ for (int current_number = number; current_number < 99; current_number++)
   Console.WriteLine($"{number} doesn't contain the third digit");
 }
 */
+//Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+bool FindWeekend (int day_number)
+{
+   if(day_number >= 6)
+      return true;
+   
+   else
+      return false;
+}
+Console.Write("Input any number of a week day: ");
+int day_number = Convert.ToInt32(Console.ReadLine());
+bool FindDay = FindWeekend(day_number);
+Console.WriteLine(FindDay);
